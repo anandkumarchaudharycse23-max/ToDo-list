@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="ap.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="todo-app">
+
+            <h2>
+                To-Do List
+                <i class="fa-solid fa-list-check"></i>
+            </h2>
+
+            <!-- Input Section -->
+            <div class="row">
+                <input
+                    type="text"
+                    id="input-box"
+                    placeholder="Add your task...">
+
+                <button id="add-btn">
+                    Add
+                </button>
+            </div>
+
+            <!-- Task List -->
+            <ul id="list-container">
+                <li>
+                    <span class="task-text">Learn JavaScript</span>
+
+                    <div class="action-buttons">
+                        <button class="edit-btn">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                        <button class="delete-btn">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+                
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="ap.js"></script>
+
+</body>
+</html>

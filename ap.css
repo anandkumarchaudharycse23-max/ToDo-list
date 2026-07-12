@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #153677, #4e085f);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.todo-app h2 {
+    color: #153677;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#input-box {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+#add-btn {
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background: #e63e2b;
+}
+
+#list-container {
+    list-style: none;
+}
+
+#list-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+.task-text {
+    flex: 1;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    color: #007bff;
+}
+
+.edit-btn:hover {
+    color: #0056b3;
+}
+
+.delete-btn {
+    color: red;
+}
+
+.delete-btn:hover {
+    color: darkred;
+}
+
+@media (max-width: 500px) {
+
+    .row {
+        flex-direction: column;
+        background: transparent;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    #input-box {
+        width: 100%;
+        background: #edeef0;
+        border-radius: 30px;
+        padding: 15px;
+    }
+
+    #add-btn {
+        width: 100%;
+    }
+}
